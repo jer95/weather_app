@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: rgb(10, 10, 57);
+  height: 100vh;
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  color: yellow;
+  background-color: rgb(23, 22, 22);
+  font-size: 28px;
+}
+h1 {
+  margin: 0px;
+  margin-left: 5px;
+}
+.search-container {
+  display: flex;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: 5px;
+}
+label {
+  font-size: 22px;
+  color: yellow;
+  padding: 3px;
+}
+
+input {
+  height: 36px;
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+  border: 3px solid navy;
+  padding: 8px;
+  font-size: 18px;
+}
