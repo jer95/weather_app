@@ -11,6 +11,7 @@ async function sortData(location) {
   // get weather data we need
   const data = await getWeatherData(location);
   const parsedData = data.days[0];
+  document.getElementById("loading").style.display = "none";
   return parsedData;
 }
 
@@ -21,6 +22,7 @@ function searchWeather() {
   const cityName = document.getElementById("city");
   // searchBtn listener
   searchBtn.addEventListener("click", async () => {
+    document.getElementById("loading").style.display = "";
     // removes last search if exists
     if (document.getElementById("container")) {
       document.getElementById("container").remove();
