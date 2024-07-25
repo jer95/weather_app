@@ -8,16 +8,37 @@
   </head>
   <body>
     <header>
-      <h1>TOPWeather Network</h1>
+      <p class="date-time" id="date-time"></p>
+      <div class="search-container">
+        <input
+          id="search"
+          type="text"
+          name="location"
+          placeholder="Enter City"
+        />
+        <button id="search-btn" type="submit">Search</button>
+      </div>
     </header>
-    <div class="search-container">
-      <label>Enter City :</label>
-      <input id="search" type="text" name="location" />
-      <button id="search-btn" type="submit">Search</button>
-    </div>
-    <p id="loading" style="display: none">Searching ...</p>
+    <p id="loading" style="display: none; font-size: 24px; color: whitesmoke">
+      Loading ...
+    </p>
     <section id="section">
-      <h2 id="city"></h2>
+      <div class="main-container">
+        <div class="container1">
+          <p class="conditions" id="conditions"></p>
+          <h2 id="city" class="city"></h2>
+        </div>
+        <div class="container2">
+          <div class="info-container">
+            <p id="temperature" class="temp"></p>
+          </div>
+          <div class="info-container">
+            <p id="feels-like" class="general-info">Feels Like :</p>
+            <p id="wind" class="general-info">Wind :</p>
+            <p id="humidity" class="general-info">Humidity :</p>
+          </div>
+        </div>
+      </div>
     </section>
     <script src="weather_app.js"></script>
   </body>
